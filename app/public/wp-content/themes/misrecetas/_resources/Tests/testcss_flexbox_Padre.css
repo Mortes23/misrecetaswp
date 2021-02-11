@@ -1,0 +1,95 @@
+/*Flex Direction*/
+
+.padre-flexd{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.hijo-flexd {
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    width: 200px;
+    height: 80px;
+}
+
+/*Con respecto al eje horizontal*/
+
+/*Flex wrap*/
+.padre-flexw{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hijo-flexw {
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    width: 200px;
+    height: 80px;
+}
+
+/*Justify-content*/
+.padre-flexj{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hijo-flexj {
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    width: 200px;
+    height:100px;
+}
+
+/*Con respecto al eje vertical*/
+
+/*Align-items*/
+.padre-flexai{
+    width: 600px;
+    height: 400px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hijo-flexai {
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    width: 100px;
+}
+
+/*Align-content*/
+.padre-flexac{
+    width: 600px;
+    height: 400px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.hijo-flexac {
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    width: 150px;
+    height: 100px;
+}

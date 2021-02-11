@@ -1,0 +1,19 @@
+
+.caja{
+    color:white;
+    padding: 1em;
+    border: 1px solid black;
+    background-color: red;
+    
+}   
+ 
+/*position fixed*/
+
+.cajaf1 {
+    position: fixed;
+    top: 0;
+    width: 500px;
+    height: 20px;
+    background-color: blue;
+
+}

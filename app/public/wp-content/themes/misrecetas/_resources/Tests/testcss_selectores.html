@@ -1,0 +1,75 @@
+<!--Hoja de html para agregar estilos css-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Test css Selectores</title>
+    <style>
+        /* Estilos por clases */
+
+        .blue-box { /*para indicar que es clase, ponemos el punto*/
+            background-color: blue;
+            padding: 10px;
+            font-size: 20px;
+        }
+        #red-box { /*la # se pone para indicar que es un id*/
+            background-color: red;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+
+
+        /* Estilo por selectores*/
+        p {background-color:pink;} /*Todo lo que sea p, tendrá este estilo*/
+        article {background-color: seagreen;}
+        div > article {background-color: rgb(188, 205, 90);} /*El simbolo > es para indicar que es padre e hijo*/
+        div p {background-color: tomato;} /*Todos los p que estén debajo del div, cogerán el formato*/
+        div,p { /*Con la coma, estamos diciendo que el estilo se incluya en ambas etiquetas*/ 
+            border-radius:10px;            
+        }
+
+
+
+    </style>
+
+    <!--Para llamar a la pagina de style.css-->
+    <link rel="stylesheet" href="style_selectores.css"> <!--El rel siempre se pone y es la "hoja de estilos"-->
+
+</head>
+<body>
+    
+    <h3>Clases creadas</h3>
+    <hr>
+    <div class="blue-box">Estilo haciendo referencia a una clase creada</div>
+    <div id="red-box">Estilo haciendo referencia a un id</div>
+    <div class="green-box-css">Estilo llamando al docuemnto exterior css</div>
+   
+    <h3>Selectores de etiquetas</h3>
+    <hr>
+    <p>Un estilo desde los selectores</p>
+    <article>Un estilo desde los selectores</article>
+    <div>
+        <article>Selector de herencia.Solo cogen el atributo los article (hijo) dentro de un div (padre)</article>
+        <span>
+            <article>Este no coge el formato de padre e hijo, porque no es directo, será un nieto</article>
+        </span>
+    <div>
+        <span>
+            <p>Este es un descendiente, pero no un hijo, así que coge el formato</p>
+        </span>
+    </div>
+    </div>
+    <hr>
+    <div class="caja-1">Estamos llamando a la caja 1 del de la hoja de style.css</div>
+    <div class="caja-2">Estamos llamando a la caja 2 de la hoja de style.css</div>
+    <div class="circulo">Usando estilos circulo</div>
+    <div class="circulo circulo-azul">Usando estilo circulo + el color, poniendo las 2 clases con espacio</div>
+    <div class="circulo circulo-rojo">Usando estilo circulo + el color, poniendo las 2 clases con espacio</div>
+    <div class="triangulo triangulo-rojo"> Usando el estilo del triangulo generico y rojo</div>
+    <div class="triangulo-rojo">Usando solo estilo del triangulo rojo</div>
+   
+
+
+</body>
+</html> 

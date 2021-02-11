@@ -1,0 +1,52 @@
+/* Esta es mi primera hoja de estilos */
+.green-box-css { /*para indicar que es clase, ponemos el punto*/
+    background-color: green;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.caja-1, .caja-2{ /*Indicamos que estos estilos coinciden en las 2 cajas*/
+    padding: 5px;
+    font-size: 10px;
+}
+/*Para añadir estilos diferentes a cada caja*/
+.caja-1{
+    background-color: hotpink;
+}
+
+.caja-2{
+    background-color: lime;
+}
+
+/*Para crear una clase estilo y luego añadir clases nuevas para incluir cosas que falten*/
+
+.circulo {
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 15px;
+    border:1px solid black;
+}
+
+.circulo-rojo{
+    background-color:red
+}
+.circulo-azul{
+    background-color: blue;
+}
+/*Para hacer referencias juntas*/
+
+.triangulo{ 
+    padding: 5px;
+    font-size: 10px;
+    border-radius: 15px;
+    border:1px solid black;
+}
+
+.triangulo-rojo{
+    background-color:red
+}
+
+.triangulo-azul{
+    background-color: blue;
+}
+

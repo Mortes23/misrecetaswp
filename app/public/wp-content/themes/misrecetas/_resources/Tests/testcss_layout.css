@@ -1,0 +1,93 @@
+
+.caja{
+    color:white;
+    padding: 1em;
+    border: 1px solid black;
+    background-color: red;
+    
+}   
+/*Position relative*/
+.cajar1 {
+    position: relative;
+    left: 10px;
+    background-color: green;
+}
+
+.cajar2 {
+    position: relative;
+    right: 20px;
+    background-color: red;
+}
+
+.cajar3 {
+    position: relative;
+    bottom: 30px;
+    background-color: blue;
+}
+
+.cajar4 {
+    position: relative;
+    top: 20px;
+    background-color:pink;
+}
+
+/*Position absolute*/
+.cajaa1 {
+    position: absolute;
+    left: 20px;
+    background-color: green;
+}
+
+.cajaa2 {
+    position: absolute;
+    right: 20px;
+    background-color: red;
+}
+
+.cajaa3 {
+    position: absolute;
+    bottom: 30px;
+    background-color: blue;
+}
+
+.cajaa4 {
+    position: absolute;
+    left: 120px;
+    background-color:pink;
+}
+
+/*position absolute y relative con hijo*/
+.cajaah1 {
+    position: relative;
+    background-color: green;
+}
+
+.hijo1 {
+    height: 30px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+}
+ 
+.cajaah2 {
+    position: relative;
+    background-color: red;
+}
+.hijo2 {
+    height: 30px;
+    width: 100px;
+    background-color: brown;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+.cajaah3 {
+    position: relative;
+    background-color: blue;
+}
+
+.cajaah4 {
+    position: relative;
+    background-color:pink;
+}

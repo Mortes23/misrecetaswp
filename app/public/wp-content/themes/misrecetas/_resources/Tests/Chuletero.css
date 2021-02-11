@@ -1,0 +1,125 @@
+/*RESET
+Para resetar todos los estilos que tiene de inicio el html
+cdn reset (en google)
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+
+ESTILOS RELACIONADOS CON TEXTOS
+    font-size:20px; --> El tamaño de la fuente. SE HEREDA 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; --> La fuente general de todo el documento
+    font-weight:Bold; --> Es para darle el grosor a la letra (negrita)
+    fontt-style:italic; -->Para hacerla cursiva
+    text-align:center (center, left, rigth, justify...); --> es para alinear el texto respecto al contenedor
+    line-height: 1.2; -->altura de linea entre renglones
+    text-decoration: underline red; -->Para el subrayado de color rojo, si no queremos color, no lo ponemos
+    color:red; -->Color del texto
+        El color se puede meter con el nombre, con el codigo #f14fda
+        También con el rgb (88,126,252)
+    color: rgba(88,126,252,0.6);-->Con el último codigo, ponemos la 
+    text-transform: uppercase; --> Que por CSS se convierta todo en mayúsculas
+
+
+ESTILOS RELACIONADOS CON CONTENEDORES
+    background-color: blue; --> Para poner el fondo con color 
+    background-image: url("_resources/tiramisu-express.jpg"); -->para poner de fondo una imagen, no un color
+    background-position: center; -->Para centrar el fondo en el contenedor
+    background-size: cover; -->Para ajustar el tamañ de la imagen, ahciendo una proporción
+    background-repeat:repeat -->Repite la imagen en todo el tamaño indicado
+        background-repeat:repeat-x; -->Lo repite en el eje x solo
+        background-repeat:repeat-y;-->Lo repite en el eje y solo
+    border-radius:10px; --> Para hacer las esquinas redondeadas
+        border-top-letf-radius: 10px; -->Con esto solo se hace ciruclar el radio de arriba, izquierda
+    border-width: 10px;
+    border-color: red;
+    border-style: solid;    
+        Para hacerlo en una linea: border:1px solid black; --> Para poner borde (grosor-estilo-color)
+    padding: 10px; -->Margen interior
+    width: 100px; -->Es el ancho del contenedor (las unidades pueden ser: px, %, em, rem, vh)
+        Si se indica en px y se reduce la pantalla, la imagen deja de verse entera
+        Si se indica en %, siempre se va a ir ajustando a la pantalla, aunque se reduzca
+        El em representa 1 caracter, del tamaño que esté indicado anteriormente (de inicio son 16px)
+        Con las medidas 100vw, estamos indicando el 100% del tamaño de ancho de la pantalla
+    height: 100px ; -->Es la altura del contenedor
+        Con las medidas 100vh, estamos indicando el 100% del tamaño de alto de la pantalla
+    border: 2px solid green; -->Para poner borde a la caja
+    box-sizing: border-box; -->Sirve para poner tamaño solo de lo de dentro de la caja, sin sumar el borde o el padding, que de inicio siempre lo añade al total
+    overflow:hidden ; -->Esto sirve para que cuando el contendio no cabe en los contenedores, haga algo
+        hidden= Oculta lo que no cabe
+        scroll: Añade una barra tanto vertical como horizontal, para que se pueda ver todo con un scroll
+        overflow-x:scroll: Para que añada solo en el horizontal el scroll
+        overflow-y:scroll: Para que añada solo en el vertical el scroll
+    margin:10px ; --> Es el margen exterior que deja tu elemento
+        Si solo ponemos una cifra, deja el mismo margen arriba, abajo, izquierda y derecha
+        margin-top: Es arriba
+        margin-bottom: Es abajo
+        margin-left: Es izquierda
+        margin-right: Es derecha
+        margin: 10px 35px 20px 45px; -->Con esto es como las agujas del reloj (arriba, derecha, abajo e iziquierda)
+        margin: 100px 40px;-->si solo ponemos 2, hace referencia el primero a arriba y abajo y el segundo a izq y derecha
+    padding: 10px; -->Es para el margen interior de una caja
+
+PSEUDOCLASES
+    :hover; -->Cuando pases el ratón por encima, coge las caracteristicas nuevas
+    :first-child; -->Para modificar el formato del 1º parrafo o primer elemento
+    :last-child; --> Para modificar el formato del último parrafo o primer elemento
+    :nth-child(n); -->Donde n es numero y podemos combinarlo con operaciones
+
+LAYOUT
+    Para poder usar el posicionamiento por left, rigth, bottom o top, hay que el position:
+        position: relative; --> Para desplazar la caja en la dirección que pongamos sin alterar el resto de cajas
+        position: absolute; --> Para mover la caja desapareciendo del flujo del resto de elementos
+        position: fixed; --> Para fijar una caja
+        position:sticky; --> Cuando llegas a la caja que lo contiene, se queda bloqueado en la pantalla
+DISPLAY
+    block: -->Un bloque ocupa el 100% del ancho y la altura del contenido
+    inline: --> No tiene separación,se amolda al contenido, aunque pongamos altura o anchura,excepto los margenes laterales
+    inline-block: --> se le puede dar dimensiones
+    none: para que desaparezca el elemento
+
+FLEXBOX DEL CONTENEDOR (PADRE)
+
+    Según el eje horizontal
+        flex-direcction: (lo escala si se hace más grande)
+            row (default): en linea de izq a derecha
+            column: En columna de arriba a abajo
+            row-reverse y column-reverse: En sentido contrario
+        flex-wrap:
+            nowrap (default): lo agrupa y no lo baja a otro nivel
+            wrap: Lo mantiene al tamaño establecido haciendo un salto
+        justify-content: para agrupar hacia un lado los bloques
+            flex-star (default): agruparlos a la izquierda
+            flex-end: agrupa a la derecha del todo
+            center: los agrupa al centro
+            space-between: Deja en los extremos y el resto los centra
+            space-around: Deja una parte proporcional del margen entre los elementos
+            space-evenly: Reparte el espacio de forma equitativa
+    Según el eje vertical:
+        align-items: 
+            strech (default): Estrecho, por la altura
+            flex-start:Lo deja arriba y para la altura, manda el contenido
+            flex-end: Lo deja abajo
+            center: en el centro
+            baseline: Centrado con respecto al texto
+        align-content:
+            flex-start: Lo agrupa todo arriba, junto
+            flex-end: Lo agrupa todo abajo, junto
+            center: Lo agrupa todo en el centro, junto
+            space-between: el superior se pega, en inferior se pega abajo y el resto en el centro
+            space-around: Deja una parte proporcional del margen entre los elementos
+            space-evenly: Reparte el espacio de forma equitativa
+
+FLEXBOX DEL CONTENIDO (HIJO)
+    order: 2; -->Si ponemos un orden y el resto no tiene nada, se irá al final, ya que el resto se consideran order 0
+    flex-grow: Es como crecen los elementos
+        0; --> Es por defecto
+        1; --> Si ponemos el 1, indicamos que se llene del todo el contenedor, aunque se amplie o se reduzca la pantalla
+    flex-shrink; --> Es como se reducen los elementos
+        1; --> Es por defecto e indica que sí que pueden decrecer
+        0; --> NO deja decrecer, por lo que se salen del contenedor
+    flex-basis: --> Es lo mismo que el width en row y lo mismo que height en column
+        Es generico para column o para row
+    align-self: --> Sirve para bajar un elemento verticalmente
+
+RELATIVE
+    max-width: 1200px -->Para decir que el máximo es esa resolución
+    min-width: 500px --> Para decir que el minimo es esa resolución
+    @media: --> Una forma de decirle al navegador, que en cierta anchira haga algo

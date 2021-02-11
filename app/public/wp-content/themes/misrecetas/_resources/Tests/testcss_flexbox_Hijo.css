@@ -1,0 +1,124 @@
+/*Order*/
+
+.padreo{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hijoo{
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.order1{
+    background-color: red;
+    order: 3;
+}
+
+.order2{
+    background-color: yellow;
+    order: 1;
+}
+
+/*flex-grow*/
+
+.padrefg{
+    width: 80%;
+    height: 600px;
+    background-color: blue;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.hijofg{
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    width: 100px;
+    height: 100px;
+    flex-grow:1 ;
+}
+
+.grow{
+
+    flex-grow: 7;
+}
+
+/*flex-shrink*/
+
+.padrefs{
+    width: 80%;
+    height: 600px;
+    background-color: blue;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.hijofs{
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 1;
+}
+
+.shrink{
+    flex-shrink: 7;
+
+}
+
+/*flex-basis*/
+
+.padrefb{
+    width: 80%;
+    height: 600px;
+    background-color: blue;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.hijofb{
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    height: 100px;
+    flex-basis: 100px;
+}
+
+/*align-self*/
+
+.padreas{
+    width: 80%;
+    height: 600px;
+    background-color: blue;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.hijoas{
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    height: 100px;
+    width: 100px;
+}
+
+.abajo{
+    align-self: flex-end;
+
+}

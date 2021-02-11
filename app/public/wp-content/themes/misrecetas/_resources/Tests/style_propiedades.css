@@ -1,0 +1,102 @@
+*{ /*Esto se pone para indicar que es en todo el documento*/
+    box-sizing: border-box; 
+    font-family: Verdana, sans-serif;    
+}
+
+.texto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /*Aunque seleccionemos uno, te incluyen más por si no se ven, que se carguen las siguientes*/
+    font-size:25px;
+    font-weight: bold;
+    font-style: italic;
+    /*también se podría poner así: font: bold 5px verdana italic*/
+    text-align: center; 
+    line-height: 1.2;
+    text-decoration: underline;
+    color: #3a7685;
+}
+
+.imagen{
+    /*De esta manera ponemos una anchura y el alto se ajusta, pero si la pagina se hace pequeña, la imagen se cortará*/
+    width: 500px;
+    height: auto; 
+}
+
+.imagen1{
+    /*De esta manera convertimos la imagen responsive, que la imagen se ajuste a las diferentes pantallas*/ 
+    width: 100%;
+    height: auto; 
+}
+
+/*Tamaños*/
+/*Todo lo que son tamaños se puede medir:
+px, %, em, rem*/
+.tamaño {
+    background-color: red;
+    padding: 10px;
+    border: 2px solid green;
+    width: 50%; /*Hace el % de la pantalla*/
+    height: 100px;
+    overflow: hidden;
+}
+
+.margin {
+    border: 2px solid red;
+    margin: 10px;
+}
+.margin1 {
+    border: 3px solid blue;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+    margin-right: 40px;
+}
+.margin2 {
+    border: 3px solid green;
+    margin: 10px 40px 30px 250px;
+}
+.margin3 {
+    border: 3px solid pink;
+    margin: 100px 40px;
+}
+
+.padding {
+    border: 2px solid red;
+    padding: 10px;
+}
+.padding1 {
+    border: 3px solid blue;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 250px;
+    padding-right: 40px;
+}
+.padding2 {
+    border: 3px solid green;
+    padding: 10px 40px 30px 250px;
+}
+.padding3 {
+    border: 3px solid pink;
+    padding: 100px 40px;
+}
+
+.background{
+    width: 500px;
+    height: 200px;
+    margin: 30px;
+    padding: 100px;
+    border: 2px solid black;
+    color:red;
+    background-color: rgba(84, 214, 171, 0.788);
+    background-image: url("_resources/tiramisu-express.jpg");
+    background-position: center;
+    background-size:cover;
+    
+}
+
+.border{
+    padding: 10px;
+    border-width: 5px;
+    border-color: red;
+    border-style: dotted;    
+    border-radius: 10px;
+}

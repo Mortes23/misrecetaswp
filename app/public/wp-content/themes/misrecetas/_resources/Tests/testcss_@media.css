@@ -1,0 +1,25 @@
+* {box-sizing: border-box;}
+
+.container  {
+    background-color: blue;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /*Esto es para centrarlo*/
+    padding:0 1em; 
+}
+
+@media (min-width:1000px) {
+    .container {background-color: yellow; }
+}
+
+@media (min-width:600px) and (max-width:999px) {
+    .container {background-color: red;
+}
+
+@media (max-width:599px) {
+    .container {background-color: blue;
+}
+
+.hijo {
+    background-color: red;
+}

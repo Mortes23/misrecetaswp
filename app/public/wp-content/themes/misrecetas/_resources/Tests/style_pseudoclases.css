@@ -1,0 +1,68 @@
+
+/*Hover*/
+
+div.padre {
+    background-color: red;
+    color: white;
+}
+
+div.padre:hover {
+    background: turquoise;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover{
+    color:green;
+    text-decoration: underline;
+}
+
+/* first-child, last-child, nth-child */
+
+div.child {
+    background-color: blue;
+    color:white
+}
+
+div.child p{
+    background-color: red;
+    color:white;
+    
+}
+
+div.child p:first-child{
+    background-color: yellow;
+    color:black;
+}
+
+div.child p:last-child{
+    background-color: pink;
+    color:black;
+}
+
+div.margen {
+    background-color: red;
+    color:white;
+    
+    }
+ div.margen p{
+    padding-bottom: 40px;
+ }
+
+div.margen p:last-child{
+    padding-bottom: 0;
+}
+
+div.nth {
+    background-color: red;
+}
+
+div.nth p:nth-child(3){
+    background-color: green ;
+}
+
+div.nth p:nth-child(2n){ /*con este formula hablamos de los pares*/
+    background-color: blue ;
+}

@@ -1,0 +1,7 @@
+.link-nrm{
+    color: rgb(24, 21, 219);
+}
+
+.link-nrm:hover {
+    text-decoration:underline rgb(24, 21, 219); 
+}

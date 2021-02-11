@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Hijo</title>
+    <link rel="stylesheet" href="testcss_flexbox_Hijo.css">
+</head>
+<body>
+    <h1>Order</h1>
+        <h3>Para ordenar</h3>
+        <h3>los que no tengan order, se considera que tienen orden 0</h3>
+            <div class="padreo">
+                <div class="hijoo order1">1</div>
+                <div class="hijoo order2">2</div>
+                <div class="hijoo">3</div>
+                <div class="hijoo">4</div>
+                <div class="hijoo">5</div>
+            </div><hr>
+    
+    <h1>Flex-grow</h1>
+        <h3>Como crecen los elementos</h3>
+        <h3>Ocupando el maximo del espacio libre y solo aumenta uno </h3>
+            <div class="padrefg">
+                <div class="hijofg">1</div>
+                <div class="hijofg">2</div>
+                <div class="hijofg grow">3</div>
+                <div class="hijofg">4</div>
+                <div class="hijofg">5</div>
+            </div><hr>
+
+    <h1>Flex-shrink</h1>
+        <h3>Es como se reducen los elementos</h3>
+        <h3>Va a reducir uno, más que el resto, equitativamente</h3>
+            <div class="padrefs">
+                <div class="hijofs">1</div>
+                <div class="hijofs">2</div>
+                <div class="hijofs">3</div>
+                <div class="hijofs shrink">4</div>
+                <div class="hijofs">5</div>
+            </div><hr>
+
+    <h1>Flex-basis</h1>
+        <h3>Cuando pongamos row, hará de width</h3>
+        <h3>Cuando pongamos column, hará de height</h3>
+            <div class="padrefb">
+                <div class="hijofb">1</div>
+                <div class="hijofb">2</div>
+                <div class="hijofb">3</div>
+                <div class="hijofb">4</div>
+                <div class="hijofb">5</div>
+            </div><hr>
+       
+    <h1>Align-self</h1>
+        <h3>?Para bajar un hijo verticalmente</h3>
+            <div class="padreas">
+                <div class="hijoas">1</div>
+                <div class="hijoas">2</div>
+                <div class="hijoas">3</div>
+                <div class="hijoas abajo">4</div>
+                <div class="hijoas">5</div>
+            </div><hr>
+
+</body>
+</html>

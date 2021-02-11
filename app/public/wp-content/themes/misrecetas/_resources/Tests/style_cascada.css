@@ -1,0 +1,27 @@
+/*cascada*/
+.cascada {
+    background-color: blue;
+    background-color: red;
+}
+/*Si nos encontramos algo así, cogerá por la cascada siempre el último estilo repetido*/
+
+/*Especifidad*/
+
+/*Hay un orden de prioridad a la hora de hacer caso
+
+1º Inline (en linea en el mismo html)
+2º Id (Los que se ponen con #)
+3º Clases (Los que se ponen con .)
+4º Elementos (Div, a, p...)
+Aunque si le ponemos a un stylo el comando !important, hace caso a ese estilo, más importante que Inline*/
+
+
+#especificad_id {color:black}
+.especifidad_clase {color:blue}
+nav {color:brown}
+
+/*Herencia*/
+/*ALgunos estilos se heredan si están dentro de la misma familia*/
+.herencia {
+    font-size: 25px;
+}

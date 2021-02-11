@@ -1,0 +1,17 @@
+.block{
+    display:block;
+    background-color: red;
+}
+
+.inline{
+    display: inline;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+.inline-block{
+    display:inline-block;
+    background-color: green;
+    margin-top: 10px;
+    height: 50px;
+}

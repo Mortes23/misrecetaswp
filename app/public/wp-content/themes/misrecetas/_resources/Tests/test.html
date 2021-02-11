@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title> Test</title>
+    </head>
+    <body>
+
+        <h1> TEXTO</h1>
+        <h1>Titulo h1</h1>
+        <h2>Titulo h2</h2>
+        <h3>Titulo h3</h3>
+        <h4 id="h4">Titulo h4</h4>
+        <h5>Titulo h5</h5>
+        <h6>Titulo h6</h6>
+        <p>Esto es un párrafo 1</p>
+        <p>Esto es un párrafo 2</p>
+        <p>Esto es un párrafo 3 </p>
+        <span> Esto es un span 1</span>
+        <span> Esto es un span 2</span>
+        <br> <!--Esto es un salto de linea-->
+        <strong>Strong es para negrita</strong>
+        <br>
+        <em>El "em" es para italica</em>
+        <br>
+        <p>Lorem ipsum, <br>dolor sit amet consectetur <strong>ghekad</strong>adipisicing elit. <em>ffesfwew lsfw sdws</em>Voluptatem soluta odit distinctio obcaecati iste, architecto est laboriosam similique aspernatur quam blanditiis facere velit, eum sed repellendus placeat rem maxime nulla!</p>
+        <hr> <!---Esto es para hacer un salto con una linea debajo-->
+
+        <h1> ENLACES</h1>
+        <a href=""> Esto es para enlace vacio</a>
+        <br>
+        <a href="index.html">Esto es un enlace a index.html</a>
+        <br>
+        <a href="http://www.google.es">Link a google</a>
+        <br>
+        <a href="http://www.google.es" target="_blank">Link a google en una pestaña nueva</a>
+        <br>
+        <a href="#h4">Enlace al id en h4</a>
+        <br>
+        <a href="mailto:mortes85@hotmail.com">Link a mandar un mail</a>
+        <br>
+        <a href="mailto:mortes85@hotmail.com">Link manda un mail a mortes85@hotmail.com (indicando el mail)</a>
+        <hr>
+
+        <h1>IMÁGENES</h1>       
+        <p>Cuando introduces la imagen mal</p>
+        <img src="jhhgadj">
+        <br>
+        <p>Imagen con la dirección de mail</p>
+        <img src="https://i.blogs.es/eed2d0/carbonara_rec/1366_2000.jpg">
+        <br>
+        <p>Imagen con dirección de mail introduciendo las medidas manualmente</p>
+        <img width="100" height="200" src="https://i.blogs.es/eed2d0/carbonara_rec/1366_2000.jpg">
+        <br>
+        <p>Cuando el texto no se carga, se añade el "alt" que es el texto se saldrá en caso de error</p>
+        <img alt="Espaguetis carbonara" src="hbandkandal">
+        <br>
+        <p>Con una imagen propia descargada en la misma carpeta que el proyecto</p>
+        <img src="espaguetis-carbonara1.jpg"> 
+        <br>
+        <p>Con una imagen propia descargada en la carpeta image del proyecto</p>
+        <img src="images/espaguetis-carbonara1.jpg">
+        <hr>
+
+        <h1>LISTAS</h1>
+        <h3>Listas no ordenadas</h3>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+        <h3>Lista ordenada</h3>
+        <ol>
+            <li>Elemento ordenador 1</li>
+            <li>Elemento ordenador 2</li>
+            <li>Elemento ordenador 3</li>
+            <li>Elemento ordenador 4</li>
+        </ol>
+        <hr>
+        
+        <h1>TABLAS</h1>
+        <table>
+            <tr> <!--Para una nueva linea-->
+                <th>Nombre</th> <!--Para las cabeceras de las tablas-->
+                <th>Nota</th>
+                <th>Asistencia</th>
+            </tr>
+            <tr>
+                <td>Carlos Mortes</td><!--Para el cuerpo de la celda en si-->
+                <td>8</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Luis Pérez</td>
+                <td>9</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Laura Millán</td>
+                <td>6</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h1>FORMULARIOS</h1>
+        <form>
+            <input type="text">Hueco para introducir texto<br>
+            <textareas></textareas>Hueco para poder meter varias lineas
+            <input type="number">Esto es para introducir números<br>
+            <input type="password">Esto es para introducir password<br>
+            <input type="text" value="abc">Esto es para introducir un valor por defecto<br>
+            <input type="text" placeholder="Introduzca su nombre aquí">Esto es para introducir un valor de referencia<br>
+            <select><!--Esto es para dar varias opciones a elegir-->
+                <option>Uno</option>
+                <option>Dos</option>
+                <option>Tres</option>
+                <option>Cuatro</option>
+            </select><br>
+            <input type="submit"> Esto es para crear el botón de "enviar" de origen<br>
+            <input type="submit" value="Mandar"disable>Esto es para crear el botón con el texto que queramos y el disable para desactivar<br>
+            <button>Enviar</button>Es lo mismo que un input pero con java puede hacer otras cosas
+        </form>
+        <hr>
+        <form>
+            <label>Introduce tu nombre:<input type="text"></label> Con el label, activamos el hueco<br>
+            <label>Introduce tu contraseña: <input type="password"></label><br> Para que salga con asteriscos
+            <label>Introduce tu Email<input type="email"></label> Para que sea obligarotio meter un @ para que deje<br>
+            <button>Enviar datos</button>
+        </form>
+        <hr>        
+    </body>
+</html> 

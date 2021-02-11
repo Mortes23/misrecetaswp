@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox padre</title>
+    <link rel="stylesheet" href="testcss_flexbox_Padre.css">
+</head>
+<body>
+    <h1>CON RESPECTO AL EJE HORIZONTAL</h1><hr>
+        <h2>Flex Directión</h2>
+            <h3>si los cubos son mas grandes que el contendeor, se escalan para entrar todos</h3>
+            <h3>Los hijos son de 200x100, pero el navegador los convierte en 120x102</h3>
+                <div class="padre-flexd">
+                    <div class="hijo-flexd">1</div>
+                    <div class="hijo-flexd">2</div>
+                    <div class="hijo-flexd">3</div>
+                    <div class="hijo-flexd">4</div>
+                    <div class="hijo-flexd">5</div>
+                </div><hr>
+
+        <h2>Flex Wrap</h2>
+            <h3>si los cubos son mas grandes que el contendeor, mantiene el tamaño y realiza un salto desagrupandolo</h3>
+                <div class="padre-flexw">
+                    <div class="hijo-flexw">1</div>
+                    <div class="hijo-flexw">2</div>
+                    <div class="hijo-flexw">3</div>
+                    <div class="hijo-flexw">4</div>
+                    <div class="hijo-flexw">5</div>
+                </div><hr>
+
+        <h2>Justify-content</h2>
+            <h3>Donde agrupar los bloques jugando con los espacios</h3>
+                <div class="padre-flexj">
+                    <div class="hijo-flexj">1</div>
+                    <div class="hijo-flexj">2</div>
+                    <div class="hijo-flexj">3</div>
+                    <div class="hijo-flexj">4</div>
+                    <div class="hijo-flexj">5</div>
+                </div><hr>
+
+    <h1> CON RESPECTO AL EJE VERTICAL </h1><hr>
+        <h2>Align-items</h2>
+            <h3>Alinea los contenedores según el eje vertical</h3>
+                <div class="padre-flexai">
+                    <div class="hijo-flexai">1</div>
+                    <div class="hijo-flexai">2</div>
+                    <div class="hijo-flexai">3</div>
+                    <div class="hijo-flexai">4</div>
+                    <div class="hijo-flexai">5</div>
+                </div><hr>
+
+        <h2>Align-content</h2>
+            <h3>Usamos esto cuando hay varias lineas</h3>
+                <div class="padre-flexac">
+                    <div class="hijo-flexac">1</div>
+                    <div class="hijo-flexac">2</div>
+                    <div class="hijo-flexac">3</div>
+                    <div class="hijo-flexac">4</div>
+                    <div class="hijo-flexac">5</div>
+                </div><hr>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

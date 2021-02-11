@@ -1,0 +1,19 @@
+*{ 
+    box-sizing: border-box; /*Cuando se trabaje con anchuras, tambien tenga en cuenta los margins y los paddings*/
+    background-color:rgb(197, 240, 241);
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+
+body{
+    overflow-x: hidden; /*Para eliminar el scroll de abajo*/
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{ /*De normal las imagenes, no ocupen más del 100% del contenedor*/
+    max-width: 100%;
+    height: auto;
+}

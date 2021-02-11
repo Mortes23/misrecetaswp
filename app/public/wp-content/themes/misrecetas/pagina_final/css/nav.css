@@ -1,0 +1,20 @@
+.nav-main ul{
+    display: flex;
+    color: grey;
+}
+
+.nav-main li {
+    margin-right: 0.5em;
+}
+
+.nav-main li:last-child{ /*Para hacer referencia al último de la lista*/
+    margin-right: 0;
+}
+
+.nav-main a{
+    color: rgb(5, 5, 122);
+}
+
+.nav-main a:hover{ /*esto es para que salga un efecto cuando se pasa por encima el ratón*/
+    text-decoration: underline;
+}

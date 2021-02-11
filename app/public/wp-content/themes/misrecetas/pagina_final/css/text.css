@@ -1,0 +1,37 @@
+/* Tamaño letra*/
+
+.fnt-xs{
+    font-size: 8px;
+}
+
+.fnt-s{
+    font-size: 12px;
+}
+
+.fnt-b{
+    font-size: 16px;
+}
+
+.fnt-m{
+    font-size: 18px;
+}
+
+.fnt-l{
+    font-size: 20px;
+}
+
+.fnt-xl{
+    font-size: 22px;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.txt-left{
+    text-align: left;
+}

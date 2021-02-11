@@ -1,0 +1,23 @@
+* {box-sizing: border-box;}
+
+.container  {
+    max-width: 1200px;
+    margin: 0 auto; /*Esto es para centrarlo*/
+    padding:0 1em; 
+}
+
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.hijo {
+    background-color: red;
+    width: 70%;
+}
+
+.primo {
+    background-color: green;
+    width: calc(30% - 10px);
+    margin-left: 10px
+}
